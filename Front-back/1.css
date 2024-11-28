@@ -1,0 +1,102 @@
+
+body {
+    background-color: aliceblue;
+    opacity: 0.8; /*透明度*/
+    /*background-image: url(图片地址);*/
+}
+
+/* id用#，class用.
+id只能有一个/一个人用
+class可以有很多人都是这个class
+*/
+
+/*上右下左 只写一个px的时候直接表示上下左右都是这个px的*/
+.test-margin {
+    margin: 50px;
+}
+
+/*如果我强制设定继承，那么margin就会继承*/
+/*.test-margin {
+    margin: inherit;
+} */
+
+/*选中页面内所有元素*/
+*{
+    color: #000;
+}
+
+/*grouping selector*/
+pre,h1 {
+    color: green;
+}
+
+/*--- Borders ----*/
+/*每个元素都可以用四个element，比如颜色可以用4个，这样边框的颜色就是4种*/
+.test-margin{
+    border-style: solid;
+    border-color: blue;
+    border-width: medium;
+    border-radius: 20px;
+    /*占屏幕的多少，所有都可以用*/
+    max-width: 50%;
+    padding-left: 40px;
+}
+
+/*---Outlines----*/
+/*不占用布局空间，是在border外的外部线条*/
+.test-outline{
+    border: 2px dashed green;
+    outline-style: dashed;
+    outline-color: blue;
+    outline-offset: 10px;
+    
+}
+
+/*---Alignment----*/
+.test-outline{
+    text-align: center;
+    /*
+    text-align-last：最后一行对齐
+    */
+}
+
+/*----Text decoration----*/
+p{
+    text-decoration-line: overline underline;
+    text-decoration-style: dashed ;
+}
+
+.transform{
+    text-transform: uppercase;
+}
+
+/*---Fonts----*/
+/* font-family: [字体1], [字体2], [字体家族]; 有空格，特殊字符的要加引号
+font-weight
+作用： 定义字体的粗细。
+font-style
+作用： 设置字体的风格，例如是否使用斜体或倾斜效果。
+font-size:50px;
+作用：大小
+*/
+/*---Table----*/
+table,th,td{
+    /* display: none; 一个是移走，一个是隐藏起来，隐藏起来占空间
+    visibility: hidden; */
+    border: 2px solid;
+    width: 50%;
+    border-collapse: collapse;
+}
+
+th{
+    height: 50px;
+}
+
+td{
+    text-align: center;
+    padding: 10px;
+}
+
+tr:hover {
+    background-color: plum;
+}

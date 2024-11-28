@@ -1,0 +1,62 @@
+/*h1里的b*/
+h1 b{
+    color: red;
+}
+
+/*只选中h2中的b，为h2的child的*/
+h2 > b{
+    color: red;
+}
+
+/*(Adjacent sibling selector)可选择紧接在另一元素后的元素,且二者有相同父元素*/
+h3 + b{
+    color: red;
+}
+
+h4 ~ b{
+    color: red;
+}
+
+/*dropdown menu*/
+.dropdownbutton{
+    background-color: red;
+    color: aliceblue;
+    padding: 13px;
+    font-size: 16px;
+    border: none;
+    cursor:pointer;/*  改变鼠标放上面的样子 */
+}
+
+.dropdownmenu{
+    display:none ;
+    position: absolute;
+    background-color: aquamarine;
+    min-width: 150px;
+}
+
+.dropdownmenu a{
+    color: rgb(62, 35, 3);
+    padding: 15px;
+    text-decoration: none;
+    display:block;
+}
+/* 鼠标放上去的样式，颜色之类的（hover） */
+.dropdownmenu a:hover{
+    background-color: blue;
+}
+
+.dropdown:hover .dropdownmenu{
+    display:block;
+}
+
+.dropdown:hover .dropdownbutton{
+    color: aqua;
+}
+/* .dropdown:hover .dropdownmenu:
+当鼠标悬停在 .dropdown 上时，触发 :hover 状态。
+在这个状态下，将其内部的 .dropdownmenu 的 display 改为 block（显示菜单）。 */
+
+
+div[class]{
+    color: brown;
+}
