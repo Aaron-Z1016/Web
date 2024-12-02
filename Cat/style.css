@@ -1,0 +1,18 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(249, 221, 180);
+    font-family: sans-serif;
+}
+
+.thumbnail{
+        width: 200px; /* 设置图片宽度 */
+        height: auto; /* 保持宽高比自动调整 */
+    
+}
+
+.card, h3{
+    color: palevioletred;
+}
