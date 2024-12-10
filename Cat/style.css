@@ -8,11 +8,64 @@ body{
 }
 
 .thumbnail{
-        width: 200px; /* 设置图片宽度 */
+        width: 300px; /* 设置图片宽度 */
         height: auto; /* 保持宽高比自动调整 */
     
 }
 
 .card, h3{
     color: palevioletred;
+}
+
+.topnav{
+    overflow: hidden;
+    background-color: rgb(249, 221, 180);
+    padding:10px;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: palevioletred;
+    text-align: center;
+    padding:14px 16px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.topnav .search-container{
+    float: right;
+}
+
+form{
+    background-color:  rgb(238, 201, 146);
+    width: 300px;
+    height: 43px;
+    border-radius: 150px;
+    display: flex;
+    align-items: center;
+}
+
+input {
+    all: unset;
+    font: 15px system-ui;
+    color: aliceblue;
+    height: 100%;
+    width: 100%;
+    padding: 6px 9px;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px 10px;
+}
+
+.card {
+    display: inline-block;
+    border-radius: 19px;
+    padding: 50px;
+    text-align: center;
+    background-color:  rgb(238, 201, 146);
 }

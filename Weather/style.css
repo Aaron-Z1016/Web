@@ -1,0 +1,53 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: beige; /* 背景颜色 */
+}
+
+.searchBar {
+ /* justify-content: center;
+    height: 100vh; 垂直方向 这俩个要一起用 */
+
+    align-items: center; /*水平方向*/
+    display: flex; /*开启flex*/
+    flex-direction: column; /*Flexbox 是水平排列的（从左到右），但 flex-direction: column; 会让它们从上到下排列。*/
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+#query {
+    width: 250px;
+    height: 40px;
+    border-radius: 15px;
+    font-size: 15px;
+    border: 1px solid dark;  
+    margin-bottom: 10px;
+    text-align: center; 
+}
+
+#searchButton {
+    width: 170px;
+    height: 40px;
+    padding: 10px 20px;    /*内容与边框之间的内边距。 */
+    font-size: 16px;             /* 字体大小 */
+    background-color: #007bff;
+    color: white;
+    border: none;                /* 去掉边框 */
+    border-radius: 5px;          /* 按钮圆角 */
+    cursor: pointer;    
+    transition: background-color 0.3s;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+    margin: 20px auto;
+}
